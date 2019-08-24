@@ -86,7 +86,7 @@ def adding_matz
         }
      }
 
-  {new: 'new_value'}.merge!(programmer_hash)
+  programmer_hash = {new: 'new_value'}.merge(programmer_hash)
   puts programmer_hash
   
   #newElement = {:yukihiro_matsumoto => {:known_for => "Ruby", :languages => ["LISP", "C"]}}
