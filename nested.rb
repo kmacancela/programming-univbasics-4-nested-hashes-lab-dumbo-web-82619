@@ -86,12 +86,15 @@ def adding_matz
         }
      }
 
+  new_response = {new: 'new_value'}.merge(programmer_hash)
+  puts new_response
+  
   #newElement = {:yukihiro_matsumoto => {:known_for => "Ruby", :languages => ["LISP", "C"]}}
   # programmer_hash.unshift(newElement)
   # Hash[:yukihiro_matsumoto => {:known_for => "Ruby", :languages => ["LISP", "C"]}].merge!(programmer_hash)
   # {:yukihiro_matsumoto => {:known_for => "Ruby", :languages => ["LISP", "C"]}}.merge(programmer_hash)
-  programmer_hash[:yukihiro_matsumoto] = {:known_for => "Ruby", :languages => ["LISP", "C"]}
-  puts programmer_hash[0]
+  # programmer_hash[:yukihiro_matsumoto] = {:known_for => "Ruby", :languages => ["LISP", "C"]}
+  # puts programmer_hash[0]
 end
 
 def changing_alan
